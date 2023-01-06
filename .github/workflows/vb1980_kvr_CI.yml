@@ -30,6 +30,8 @@ jobs:
         include:
           - build_variant: "mt7621-usb-2"
             targets: "MI-R3G"
+          - build_variant: "mt7621-usb"
+            targets: "MI-R3G"
 
     steps:
       - name: Checkout main            # 导入主分支

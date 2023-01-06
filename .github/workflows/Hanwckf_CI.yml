@@ -28,20 +28,16 @@ jobs:
     strategy:
       matrix:
         include:
-        - build_variant: "mt7621-usb"
-         targets: "MI-R3G"
-        - build_variant: "mt7621-usb"
-         targets: "MI-R3G"
-        - build_variant: "mt7621-usb"
-         targets: "MI-R3G"
-        #zk  - build_variant: "mt7620"
-         #zk    targets: "PSG1208 PSG1218 NEWIFI-MINI MI-MINI MI-3 OYE-001 5K-W20"
-        #zk   - build_variant: "mt7621"
-         #zk    targets: "K2P_nano K2P DIR-878 RM2100 CR660x"
-        #zk   - build_variant: "mt7621-usb"
-        #zk     targets: "XY-C1 JCG-836PRO JCG-AC860M JCG-Y2 DIR-882 A3004NS MSG1500 WR1200JS MI-R3G NEWIFI3 B70"
-        #zk   - build_variant: "mt7628"
-        #zk     targets: "HC5861B MI-NANO MZ-R13 MZ-R13P 360P2 HC5761A HC5661A"
+          - build_variant: "mt7621-usb-2"
+            targets: "MI-R3G"
+          - build_variant: "mt7621-usb-2"
+            targets: "MI-R3G"
+          - build_variant: "mt7621-usb-2"
+            targets: "MI-R3G"
+          - build_variant: "mt7621-usb-2"
+            targets: "MI-R3G"
+          - build_variant: "mt7621-usb-2"
+            targets: "MI-R3G"
     steps:
       - name: Checkout main            # 导入主分支
         uses: actions/checkout@v2

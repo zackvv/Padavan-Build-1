@@ -63,7 +63,7 @@ jobs:
           if [ -d vb1980/scripts ]; then cp -f vb1980/scripts/* $work_dir; fi
           cd $config_dir
           for m in $targets; do if [ -f $m.config ]; then \
-                  echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n" >> .config #MENTOHUST
+        
           ##科学上网##
           echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> $m.config #科学上网插件，选择n后全部有关插件都不集成
           echo "CONFIG_FIRMWARE_INCLUDE_XRAY=y" >> $m.config #集成xray执行文件  ~4.5M

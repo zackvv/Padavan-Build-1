@@ -28,7 +28,11 @@ jobs:
     strategy:
       matrix:
         include:
-         - build_variant: "mt7621-usb"
+        - build_variant: "mt7621-usb"
+         targets: "MI-R3G"
+        - build_variant: "mt7621-usb"
+         targets: "MI-R3G"
+        - build_variant: "mt7621-usb"
          targets: "MI-R3G"
         #zk  - build_variant: "mt7620"
          #zk    targets: "PSG1208 PSG1218 NEWIFI-MINI MI-MINI MI-3 OYE-001 5K-W20"
